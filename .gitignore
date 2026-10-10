@@ -1,0 +1,26 @@
+# Node & Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env.local
+frontend/.env*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Python & FastAPI
+backend/__pycache__/
+backend/*/__pycache__/
+*.py[cod]
+*$py.class
+backend/.pytest_cache/
+backend/.coverage
+.env
+venv/
+.venv/
+env/
+
+# System files
+.DS_Store
+Thumbs.db

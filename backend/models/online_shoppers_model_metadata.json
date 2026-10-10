@@ -1,0 +1,66 @@
+{
+    "feature_names": [
+        "Administrative",
+        "Administrative_Duration",
+        "Informational",
+        "Informational_Duration",
+        "ProductRelated",
+        "ProductRelated_Duration",
+        "BounceRates",
+        "ExitRates",
+        "PageValues",
+        "SpecialDay",
+        "Month",
+        "OperatingSystems",
+        "Browser",
+        "Region",
+        "TrafficType",
+        "VisitorType",
+        "Weekend"
+    ],
+    "categorical_features": [
+        "Month",
+        "VisitorType"
+    ],
+    "numerical_features": [
+        "Administrative",
+        "Administrative_Duration",
+        "Informational",
+        "Informational_Duration",
+        "ProductRelated",
+        "ProductRelated_Duration",
+        "BounceRates",
+        "ExitRates",
+        "PageValues",
+        "SpecialDay",
+        "OperatingSystems",
+        "Browser",
+        "Region",
+        "TrafficType",
+        "Weekend"
+    ],
+    "target_mapping": {
+        "0": "No Purchase",
+        "1": "Purchase"
+    },
+    "best_model_name": "Random Forest",
+    "categorical_values": {
+        "Month": [
+            "Feb",
+            "Mar",
+            "May",
+            "Oct",
+            "June",
+            "Jul",
+            "Aug",
+            "Nov",
+            "Sep",
+            "Dec"
+        ],
+        "VisitorType": [
+            "Returning_Visitor",
+            "New_Visitor",
+            "Other"
+        ]
+    }
+}
