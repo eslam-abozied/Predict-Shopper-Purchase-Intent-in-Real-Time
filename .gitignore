@@ -24,3 +24,5 @@ env/
 # System files
 .DS_Store
 Thumbs.db
+.vercel/
+frontend/.vercel/
