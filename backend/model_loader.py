@@ -3,7 +3,10 @@ import json
 import joblib
 import pandas as pd
 from typing import Dict, Any, List
-from .schemas import ShopperSessionInput, PredictionResponse, DriverItem
+try:
+    from schemas import ShopperSessionInput, PredictionResponse, DriverItem
+except ImportError:
+    from .schemas import ShopperSessionInput, PredictionResponse, DriverItem
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(CURRENT_DIR, "models", "online_shoppers_best_model.pkl")

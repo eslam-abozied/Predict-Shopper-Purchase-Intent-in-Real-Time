@@ -3,8 +3,12 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Dict, Any, List
 
-from .schemas import ShopperSessionInput, PredictionResponse, BenchmarkMetric
-from .model_loader import predict_session, get_metadata
+try:
+    from schemas import ShopperSessionInput, PredictionResponse, BenchmarkMetric
+    from model_loader import predict_session, get_metadata
+except ImportError:
+    from .schemas import ShopperSessionInput, PredictionResponse, BenchmarkMetric
+    from .model_loader import predict_session, get_metadata
 
 app = FastAPI(
     title="Online Shoppers Intention API",
